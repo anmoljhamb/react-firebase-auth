@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { ConditionalRoute } from "./components";
-import { Dashboard, Landing } from "./pages";
+import { Dashboard, Landing, LogIn, SignUp } from "./pages";
 
 function App() {
     return (
@@ -15,6 +15,8 @@ function App() {
                         />
                     }
                 />
+                <Route path="/login" element={<LogIn />} />
+                <Route path="/signup" element={<SignUp />} />
             </Routes>
         </>
     );
